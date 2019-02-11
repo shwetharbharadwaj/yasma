@@ -1,0 +1,13 @@
+<h1>album</h1>
+
+{{#each model as |album|}}
+<div class="container">
+	<div class="panel panel-default">
+	<div class="panel-heading">
+		{{!-- <button><h3 class="panel-title">{{album.id}}</h3></button> --}}
+	<p>	<img class="image" src="{{album.id}}"></p> 
+	</div>
+</div>
+</div>
+{{/each}}
+{{outlet}}

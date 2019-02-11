@@ -7,6 +7,12 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('post');
+
+  this.route('model');
+  this.route('album');
+  this.route('images');
+  this.route('display');
 });
 
 export default Router;

@@ -1,0 +1,12 @@
+<h1>Display</h1>
+
+{{#each model as |post|}}
+
+	<div class="panel panel-default">
+	<div class="panel-body">
+<p><h4>Comments:</h4>{{post.body}}</p>
+
+</div>
+</div>
+{{/each}}
+{{outlet}}
