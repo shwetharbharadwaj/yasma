@@ -3,6 +3,6 @@ import Ember from 'ember';
 
 export default Route.extend({
 	model(){
-		return this.store.findAll('album');
+		return this.store.findAll('photo');
 	}
 });

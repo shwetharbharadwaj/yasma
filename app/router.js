@@ -11,8 +11,9 @@ Router.map(function() {
 
   this.route('model');
   this.route('album');
-  this.route('images');
+  // this.route('images');
   this.route('display');
+  this.route('photo');
 });
 
 export default Router;

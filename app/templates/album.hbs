@@ -1,12 +1,14 @@
 <h1>Album</h1>
 
 {{#each model as |album|}}
-<div class="row">
+
 	<div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">{{album.title}}</h3>
-			</div>
-</div>
-</div>
-{{/each}}
+        <h3 class="panel-title">{{album.title}}</h3>
+	
+    </div>
+    </div>
+  {{/each}}
 {{outlet}}
+
+       
