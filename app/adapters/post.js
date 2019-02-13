@@ -1,8 +1,8 @@
 import Typicode from './typicode';
 
-export default Typicode.extend({
+  export default Typicode.extend({
 	
-	pathForType(){
+	  pathForType(){
 		return 'posts';
 	}
 });

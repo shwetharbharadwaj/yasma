@@ -7,13 +7,13 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('post');
+  this.route('post', function() {
+  this.route('comment' ,{path: '/comment/:id'});
+});
+  this.route('album', function() {
+    this.route('photo' ,{path: '/photo/:id'});
+  });
 
-  this.route('model');
-  this.route('album');
-  // this.route('images');
-  this.route('display');
   this.route('photo');
 });
-
 export default Router;

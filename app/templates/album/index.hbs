@@ -1,0 +1,12 @@
+{{#each album as |album|}}
+<div class="panel panel-default"{{action 'redirect' album}}>
+	<div class="panel-heading">
+		<div class="panel-title">{{album.title}}
+           </div>
+	     <div class="panel-body">
+          {{!-- <p></p> --}}
+      </div>
+   </div>
+ </div> 
+{{/each}}
+{{outlet}}

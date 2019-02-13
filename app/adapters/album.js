@@ -1,9 +1,9 @@
 import Typicode from './typicode';
 
-export default Typicode.extend({
+  export default Typicode.extend({
 	
-	pathForType(){
-		return 'photos';
+	  pathForType(){
+		return 'albums';
 	}
 });
 
