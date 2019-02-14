@@ -1,9 +1,11 @@
-
-    <div class="item  col-xs-3">
-	<div class="panel panel-default">
+{{#each photo as |photo|}}
+    <div class="item  col-xs-4">
+	<div class="panel panel-default"{{action 'display' show}}>
 	<div class="panel-heading">
-		<h3 class="panel-title">{{photo.title}}</h3>
+          
+	<h3 class="panel-title">{{photo.id}}</h3>
 	<img src="{{photo.thumbnailUrl}}">
 </div>
 </div>
 </div>
+{{/each}}

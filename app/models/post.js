@@ -1,10 +1,10 @@
 import DS from 'ember-data';
 import Model from 'ember-data/model';
-const { attr , hasMany }=DS;
+const { attr , hasMany, belongsTo }=DS;
 export default DS.Model.extend({
-	post: hasMany('comment'),
-
 	title:attr('string'),
-	body: attr('string')
+	body: attr('string'),
+	comment: hasMany('comment'),
+	user: belongsTo('user')
 
 });

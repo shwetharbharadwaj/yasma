@@ -12,7 +12,7 @@ export default Route.extend({
 	actions: {
 		redirect(album){
 		
-			this.get('router').transitionTo('album.photo', album.id);
+			this.get('router').transitionTo('album.photo', album);
 
 
 		},

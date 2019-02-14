@@ -3,12 +3,14 @@ import Ember from 'ember';
 
 export default Route.extend({
 	model(params){
-		
-		return this.store.findRecord('comment', params.id);
-      }
-	// setupController(controller, model){
-		
-	// 	  // this._super(controller, model);
-	// 	set(controller,'comment',model);
-	// }
+	 
+		return this.store.query('comment', {
+			postId: params.post_id
+		});
+      },
+
+      setupController(controller, model){
+		set(controller,'comment',model);
+	}
+
 });

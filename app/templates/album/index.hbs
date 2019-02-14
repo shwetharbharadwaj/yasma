@@ -1,10 +1,11 @@
 {{#each album as |album|}}
+
 <div class="panel panel-default"{{action 'redirect' album}}>
 	<div class="panel-heading">
-		<div class="panel-title">{{album.title}}
+		<div class="panel-title">{{album.id}}
            </div>
 	     <div class="panel-body">
-          {{!-- <p></p> --}}
+         <p>{{album.title}}</p>
       </div>
    </div>
  </div> 

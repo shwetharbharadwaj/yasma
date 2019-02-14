@@ -4,10 +4,14 @@ import Ember from 'ember';
 export default Route.extend({
 	model(params){
 		
-		return this.store.findRecord('photo', params.id);
+		return this.store.query('photo', {
+			albumId: params.album_id
+		});
+   
       },
       setupController(controller, model){
-		Ember.set(controller,'photo',model);
+		set(controller,'photo',model);
 	}
+
 
 });
