@@ -6,17 +6,17 @@ export default Route.extend({
 	
 		return this.store.findAll('post');
 	},
-	setupController(controller, model){
-		set(controller,'post',model);
-	},
+	// setupController(controller, model){
+	// 	set(controller,'post',model);
+	// },
 
 	actions: {
 		move(post){
 		
-			this.get('router').transitionTo('post.comment', post);
+			this.get('router').transitionTo('post.comment', post.id);
 
 
-		},
-	}
+		}
+	},
    
 });

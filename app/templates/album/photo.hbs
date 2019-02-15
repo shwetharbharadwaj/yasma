@@ -1,11 +1,12 @@
-{{#each photo as |photo|}}
-    <div class="item  col-xs-4">
-	<div class="panel panel-default"{{action 'display' show}}>
-	<div class="panel-heading">
-          
-	<h3 class="panel-title">{{photo.id}}</h3>
-	<img src="{{photo.thumbnailUrl}}">
-</div>
-</div>
-</div>
-{{/each}}
+
+	{{#each photos as |photo|}}
+	    <div class="item  col-xs-4">
+			<div class="panel panel-default"{{action 'display' photo}}>
+				<div class="panel-heading">
+					<h3 class="panel-title">{{photo.id}}</h3>
+					<img src="{{photo.thumbnailUrl}}">
+				</div>
+			</div>
+		</div>
+	{{/each}}
+{{outlet}}

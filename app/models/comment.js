@@ -8,6 +8,7 @@ export default DS.Model.extend({
     body: attr('string'),
     name: attr('string'),
     email:attr('string'),
+   
 
 	post: belongsTo('post'), 
 

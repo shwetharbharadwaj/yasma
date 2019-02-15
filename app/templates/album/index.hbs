@@ -1,4 +1,4 @@
-{{#each album as |album|}}
+{{#each model as |album|}}
 
 <div class="panel panel-default"{{action 'redirect' album}}>
 	<div class="panel-heading">
@@ -8,6 +8,6 @@
          <p>{{album.title}}</p>
       </div>
    </div>
- </div> 
+</div> 
 {{/each}}
 {{outlet}}

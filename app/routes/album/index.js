@@ -1,21 +1,18 @@
-import Ember from 'ember'; 
+import Ember from 'ember';
  const{ Route, set }=Ember;
 
 export default Route.extend({
-	model(){
-		return this.store.findAll('album');
-	},
-	setupController(controller, model){
-		Ember.set(controller,'album',model);
-	},
-
-	actions: {
-		redirect(album){
+	model:function(params){
 		
-			this.get('router').transitionTo('album.photo', album);
-
-
-		},
-	}
-   
+		return this.store.findAll('album'); 
+			
+	},
+ 
+	actions:{
+		redirect(album){
+		 this.get('router').transitionTo('album.photo', album.id);
+		}
+	},
+	 
 });
+

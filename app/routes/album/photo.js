@@ -3,15 +3,22 @@ import Ember from 'ember';
 
 export default Route.extend({
 	model(params){
-		
-		return this.store.query('photo', {
-			albumId: params.album_id
-		});
-   
-      },
-      setupController(controller, model){
-		set(controller,'photo',model);
-	}
+		return Ember.RSVP.hash({
+			album: this.get('store').findRecord('album', params.id),
+			photos: this.get('store').query('photo', {albumId: params.id})
+		})
+	},
+    setupController(controller, model){
+    	debugger
+		set(controller,'model',model);
+		controller.set('album', model.album);
+		controller.set('photos', model.photos);
+	},
+	actions:{
+		display(photo){
+           debugger
+		 this.get('router').transitionTo('album.show', photo);
 
-
+		}
+	},
 });
