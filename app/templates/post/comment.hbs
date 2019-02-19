@@ -1,13 +1,13 @@
 {{#each comments as |comment|}}
-<div class="item  col-xs-4">
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h3 class="panel-title">{{comment.postId}}</h3>
-			<h3 class="panel-title">{{comment.name}}</h3>
-			<h3 class="panel-title">{{comment.email}}</h3>
-			<p>{{comment.body}}</p>
-		</div>
-	</div>
-</div>
+  <div class="item  col-xs-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{comment.postId}}</h3>
+        <h3 class="panel-title">{{comment.name}}</h3>
+        <h3 class="panel-title">{{comment.email}}</h3>
+        <p>{{comment.body}}</p>
+      </div>
+    </div>
+  </div>
 {{/each}}
 {{outlet}}
