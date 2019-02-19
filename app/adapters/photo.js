@@ -1,8 +1,6 @@
 import Typicode from './typicode';
-
-  export default Typicode.extend({
-	
-	  pathForType(){
+ export default Typicode.extend({
+	pathForType(){
 		return 'photos';
 	}
 });

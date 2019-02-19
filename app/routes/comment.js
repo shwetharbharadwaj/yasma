@@ -1,5 +1,6 @@
-import Ember from 'ember';
-  
-   const { Route, set } = Ember;
-  export default Route.extend({ 
+import Route from '@ember/routing/route';
+// import Ember from 'ember';
+// import { set } from '@ember/object';
+export default Route.extend({ 
+	
 });

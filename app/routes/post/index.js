@@ -1,7 +1,5 @@
-import Ember from 'ember'; 
- const{ Route, set }=Ember;
-
-export default Route.extend({
+import Route from '@ember/routing/route';
+  export default Route.extend({
 	model(){
 	
 		return this.store.findAll('post');
@@ -12,11 +10,8 @@ export default Route.extend({
 
 	actions: {
 		move(post){
-		
-			this.get('router').transitionTo('post.comment', post.id);
-
-
-		}
+		this.get('router').transitionTo('post.comment', post.id);
+      }
 	},
    
 });

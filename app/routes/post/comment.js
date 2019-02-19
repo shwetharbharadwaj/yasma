@@ -1,5 +1,7 @@
 import Ember from 'ember';
- const{ Route, set }=Ember;
+import { set } from '@ember/object';
+import Route from  '@ember/routing/route';
+import { hash } from 'rsvp';
 
 export default Route.extend({
 	model(params){
@@ -8,9 +10,7 @@ export default Route.extend({
 			comments: this.get('store').query('comment', {postId: params.id})
 		})
 	},
-	
-     setupController(controller, model){
-     
+	setupController(controller, model){
         set(controller,'model',model);
 		controller.set('post', model.post);
 		controller.set('comments', model.comments);

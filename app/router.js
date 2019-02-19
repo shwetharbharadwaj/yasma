@@ -8,7 +8,7 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('post', function() {
-      this.route('comment' ,{ path:'/post/:id' });
+      this.route('comment' ,{ path:'post/:id' });
   });
   this.route('album', function() {
     this.route('photo' ,{ path:'photo/:id'});

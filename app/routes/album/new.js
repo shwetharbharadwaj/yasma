@@ -8,15 +8,12 @@
 //       album:  this.store.findAll('album') ,
 //       photo:  this.store.query('photo', {
 // 			albumId: params.album_id
-// 		}),
+// 	}), 
 //       show: this.store.findRecord('photo', params.id)
     
 //   })
 // },
-
-
-
-//    setupController(controller, model) {
+// setupController(controller, model) {
 //     set('album', model.album);
 //     set('photo', model.photo);
 //      set('model', model.show);
