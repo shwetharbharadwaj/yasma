@@ -1,11 +1,8 @@
 {{#each model as |post|}} 
 	<div class="panel panel-default"{{action "move" post}}>
-		<div class="panel-title">
-			{{post.id}}
-		</div>
-		<div class="panel-body">
-			<p>{{post.body}}</p>
-		</div>
+		{{#post-comp comp=post}}
+
+		{{/post-comp}}
 	</div>
 {{/each}}
 {{outlet}}	
