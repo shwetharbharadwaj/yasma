@@ -4,9 +4,6 @@ import Route from '@ember/routing/route';
 	
 		return this.store.findAll('post');
 	},
-	// setupController(controller, model){
-	// 	set(controller,'post',model);
-	// },
 
 	actions: {
 		move(post){

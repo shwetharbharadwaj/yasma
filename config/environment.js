@@ -8,15 +8,15 @@ module.exports = function(environment) {
     locationType: 'auto',
       
    firebase:{
-    apiKey: "AIzaSyCeUo3IHwe8YZqnU1GhEj1VkO53BJ5NpjI",
-    authDomain: "yasma-3c091.firebaseapp.com",
-    databaseURL: "https://yasma-3c091.firebaseio.com",
-    projectId: "yasma-3c091",
-    storageBucket: "yasma-3c091.appspot.com",
-    messagingSenderId: "263593316349"
+     apiKey: "AIzaSyCK3XYQQ45NZd9jLAty7d7oRPJ_tyoow68",
+    authDomain: "yasma-socialmedia.firebaseapp.com",
+    databaseURL: "https://yasma-socialmedia.firebaseio.com",
+    projectId: "yasma-socialmedia",
+    storageBucket: "yasma-socialmedia.appspot.com",
+    messagingSenderId: "317021322440"
 
    },
-   contentSecurityPolicy: {
+    contentSecurityPolicy: {
       'script-src': "'self' 'unsafe-eval' apis.google.com",
       'frame-src': "'self' https://*.firebaseapp.com",
       'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
@@ -41,10 +41,10 @@ module.exports = function(environment) {
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
-     // ENV.APP.LOG_ACTIVE_GENERATION = true;
-     //ENV.APP.LOG_TRANSITIONS = true;
-     //ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-     //ENV.APP.LOG_VIEW_LOOKUPS = true;
+     ENV.APP.LOG_ACTIVE_GENERATION = true;
+     ENV.APP.LOG_TRANSITIONS = true;
+     ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+     ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {
