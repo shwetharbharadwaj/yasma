@@ -8,11 +8,14 @@ body{
 
 .panel{
  	cursor: pointer;
-}
+ 	}
+ 	.panel-body{
+ 		width:80.33%;
+ 	}
  	.panel-title {
  		white-space: nowrap;
  		text-overflow: ellipsis;
-    overflow: hidden;
+        overflow: hidden;
 }
 .panel-heading{
 	text-overflow: ellipsis;

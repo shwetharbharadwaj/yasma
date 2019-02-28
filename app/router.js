@@ -8,11 +8,13 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('post', function() {
-      this.route('comment' ,{ path:'post/:id' });
+      this.route('comment' ,{ path:'comment/:id' });
   });
   this.route('album', function() {
-    this.route('photo' ,{ path:'photo/:id'});
-    this.route('show',{ path:'/:id'});
+    this.route('photo' ,{ path:'/:id'});
+
+    this.route('show',{ path:'photo/:id'});
   });
 });
+
 export default Router;

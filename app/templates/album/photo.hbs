@@ -1,16 +1,16 @@
 {{#link-to 'album'}}<button class="btn btn-dark	">back</button>{{/link-to}}
 <h3>Photos</h3>	
 {{#each photos as |photo|}}
-<div class="col-lg-2 col-md-8 col-xs-8 col-sm-8">
-    <div class="panel panel-default"{{action "display" photo}} title="{{photo.title}}">
-    	 
-    	 <div class="panel-heading">
-    		<div class="panel-title">{{photo.title}}</div>
-    	</div>
-       <div class="panel-body">
-        <img class="img" src={{photo.thumbnailUrl}} alt="picture">
-      </div>
-   </div>
-</div>
+	<div class="col-lg-2 col-md-8 col-xs-8 col-sm-8">
+	    <div class="panel panel-default"{{action "display" photo}} title="{{photo.title}}">
+	    	 
+	    	 <div class="panel-heading">
+	    		<div class="panel-title">{{photo.title}}</div>
+	    	</div>
+	       <div class="panel-body">
+	        <img class="img" src={{photo.thumbnailUrl}} alt="picture">
+	      </div>
+	   </div>
+	</div>
 {{/each}}
 {{outlet}}
