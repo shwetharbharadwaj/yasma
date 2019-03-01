@@ -8,12 +8,12 @@ module.exports = function(environment) {
     locationType: 'auto',
       
    firebase:{
-     apiKey: "AIzaSyCK3XYQQ45NZd9jLAty7d7oRPJ_tyoow68",
-    authDomain: "yasma-socialmedia.firebaseapp.com",
-    databaseURL: "https://yasma-socialmedia.firebaseio.com",
-    projectId: "yasma-socialmedia",
-    storageBucket: "yasma-socialmedia.appspot.com",
-    messagingSenderId: "317021322440"
+     apiKey: "AIzaSyCcjZhNIbHBGm6uqGRHNieegTXTinwKaAs",
+    authDomain: "yasma-bda13.firebaseapp.com",
+    databaseURL: "https://yasma-bda13.firebaseio.com",
+    projectId: "yasma-bda13",
+    storageBucket: "yasma-bda13.appspot.com",
+    messagingSenderId: "601676819817"
 
    },
     contentSecurityPolicy: {

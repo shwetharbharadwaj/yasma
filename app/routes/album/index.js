@@ -4,7 +4,7 @@ import Route from '@ember/routing/route';
        return this.store.findAll('album'); 
     },
     actions:{
-    	  redirect(album){
+    	 redirect(album){
            this.get('router').transitionTo('album.photo', album.id);
         }
     },

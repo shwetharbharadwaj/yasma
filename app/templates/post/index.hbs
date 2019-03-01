@@ -1,8 +1,7 @@
-{{#each model as |post|}} 
-	<div class="panel panel-default"{{action "move" post}}>
-		{{#post-comp comp=post}}
-
-		{{/post-comp}}
-	</div>
+{{#each model as |post|}}
+  <div class="panel panel-default"{{action "move" post}}>
+    {{#post-comp comp=post}}
+    {{/post-comp}}
+  </div>
 {{/each}}
-{{outlet}}	
+{{outlet}}

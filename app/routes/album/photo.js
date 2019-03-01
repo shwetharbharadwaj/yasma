@@ -5,6 +5,7 @@ import Ember from 'ember';
 export default Route.extend({
   
   model(params){
+    debugger
     return Ember.RSVP.hash({
       album: this.get('store').findRecord('album', params.id),
       photos: this.get('store').query('photo', {albumId: params.id})
@@ -19,6 +20,6 @@ export default Route.extend({
     display(photo){
      this.get('router').transitionTo('album.show', photo);
 
-    }
-  },
+}
+}
 });
